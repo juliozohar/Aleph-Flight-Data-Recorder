@@ -97,12 +97,13 @@ void celsius(int valSensor){
   Writes the record to the configured output.
 */
 void write_record(){
-		char tmp_cont[6];    //TODO: optimize this
+    char tmp_cont[6];    //TODO: optimize this
     char tmp_raw[6];     //TODO: optimize this
+    sprintf(tmp_cont,"%5d", cont_reg);
     String ts =  RealTime.getDateTime();
 		raw001a += REG_TYPE;
 		raw001a += REG_NAME;
-		raw001a += sprintf(tmp_cont,"%5d", cont_reg);
+		raw001a += tmp_cont;
 		raw001a += ts;
 
 		if(temp_raw >=0){
