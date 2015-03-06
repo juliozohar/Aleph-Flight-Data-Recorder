@@ -1,56 +1,59 @@
 ==============================================
-   RealTime for Arduino Libary, version 1.0 
+   RealTime for Arduino Libary, version 1.0
 ==============================================
 
 Usage
 -----
 
-This library supports the following devices : 
+This library supports the following devices :
 
-DS1307, DS1317 and DS1307Z 
+DS1307, DS1317 and DS1307Z
 
-Please, verify in the device datasheet the reference circuit 
-to use with this library. 
+Please, verify in the device datasheet the reference circuit
+to use with this library.
 
-This library requires the use of a I2C protocol, and it can 
-only be used with any other device that also supports it. 
+This library requires the use of a I2C protocol, and it can
+only be used with any other device that also supports it.
 
-The functions implemented in this version are: 
+The functions implemented in this version are:
 
-		- setDateTime(); 
-Sets a timestamp in the clock, in the format yyyy-mm-dd-hh.mn.ss; 
+		- setDateTime();
+Sets a timestamp in the clock, in the format yyyy-mm-dd-hh.mn.ss;
 
-		- getDate(); 
+		- getDateTime();
 		Returns the timestamp currently running in the RTC
 
-		- stop(); 
+    - readRTC();
+    Reads the latest timestamp in the real time clock
+
+		- stop();
 		Stops and resets the data in internal storage
 
-		- start(); 
+		- start();
 		Starts a time counting cycle
 
-Note that to keep the timestamp after powering off the circuit, 
-you will need to use a backup battery, in the 3rd and 4th pins 
-of your DS13xx CI. 
+Note that to keep the timestamp after powering off the circuit,
+you will need to use a backup battery, in the 3rd and 4th pins
+of your DS13xx CI.
 
 
 
 Change history
 --------------
 
-2015-01-10 First version. 
+2015-01-10 First version.
 
 
 
-Credits 
+Credits
 -------
 
 The RealTime library was derived from the DS1307 library.
 
-Jules-Caesar Toussaint <juliozohar@gmail.com> originally developed 
-this library. 
+Jules-Caesar Toussaint <juliozohar@gmail.com> originally developed
+this library.
 
-You can get the latest version of the library in the Github 
+You can get the latest version of the library in the Github
 repository <http://github.com/juliozohar>. 
 
 
