@@ -1,0 +1,39 @@
+Iteration planning
+
+Aleph Flight Data Recorder
+
+	Date: February 2015
+
+	Version: v.1.0.0a
+
+	Features:
+
+	SOFTWARE PROJECT
+
+	- Base Arduino Sketch;
+	- Real time library:
+		Get timestamp (getDateTime);
+		Set timestamp (setDateTime);
+		Stop RTC (stop);
+		Start RTC (start);
+		ReadRTC values (readRTC);
+
+	- Support to LM35:
+		Get temperature (get_temp_int);
+		Set calibration offset (offset);
+
+	- Display register in serial Terminal, format RAWF001A.
+
+
+
+	HARDWARE PROJECT
+
+	- Built on top of Arduino platform;
+
+	- Implements circuit for RTC and LM35 support;
+
+	- Create schematics and board layout in Eagle;
+
+	- Generate Gerber files in OSHPark compatible format;
+
+	- LED power indicator.

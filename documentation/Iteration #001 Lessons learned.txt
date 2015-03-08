@@ -1,0 +1,29 @@
+Lessons learned
+
+Over this iteraction, we have learned some important lessons:
+
+Design
+
+- Reorient all the components, so the positive polarity is placed in a standard
+pattern. Do so to the IC's #1 pins. This gives a practical sense of orientation
+through the design, and makes the assembly easier.
+
+- The battery holder takes a great amount of space in the board's total area, thus
+enlarging the ensemble and making it more expensive in the end. Look for another
+type of battery, smaller than CR2025. As a suggestion, we could have the following
+battery series: 1216, 1220, 1225.
+
+- The interface connection between the board and the exterior is not stable, with
+various wires connected in a 1:1 basis. Rethink this design to incorporate some
+"smarter" interface, like molex connectors, at least from the PCB's side.
+
+
+Board production:
+
+- The silkscreen layer was blown out. The factory's instructions weren't as accurate
+as we would like them to be. For the next iterations, make sure the silkscreen layer
+stands in good format for production.
+
+- The battery holder's legs were thicker than the holes drilled in the board. Although
+this is not strictly a factory problem, this decreases the product's overall quality.
+Look for another battery holder blueprint to ensure the correct fabrication.
